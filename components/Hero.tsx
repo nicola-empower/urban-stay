@@ -57,15 +57,15 @@ export default function Hero() {
                     className="mt-8 flex flex-wrap justify-center gap-6 text-sm font-semibold text-white sm:gap-12"
                 >
                     <div className="flex items-center gap-2 drop-shadow-md">
-                        <ShieldCheck className="h-5 w-5 text-[var(--color-primary)]" />
+                        <ShieldCheck className="h-5 w-5 text-(--color-primary)" />
                         <span>Verified Hosts</span>
                     </div>
                     <div className="flex items-center gap-2 drop-shadow-md">
-                        <Clock className="h-5 w-5 text-[var(--color-primary)]" />
+                        <Clock className="h-5 w-5 text-(--color-primary)" />
                         <span>24/7 Support</span>
                     </div>
                     <div className="flex items-center gap-2 drop-shadow-md">
-                        <Key className="h-5 w-5 text-[var(--color-primary)]" />
+                        <Key className="h-5 w-5 text-(--color-primary)" />
                         <span>Self Check-in</span>
                     </div>
                 </motion.div>

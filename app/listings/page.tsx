@@ -27,7 +27,7 @@ export default function ListingsPage() {
                 {/* Filters Header */}
                 <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                     <div>
-                        <h1 className="font-heading text-3xl font-bold text-[var(--color-foreground)]">
+                        <h1 className="font-heading text-3xl font-bold text-(--color-foreground)">
                             Stays in Metropolis
                         </h1>
                         <p className="text-gray-500">

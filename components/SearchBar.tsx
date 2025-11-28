@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, MapPin, Calendar, AlertCircle } from "lucide-react";
+import { Search, AlertCircle } from "lucide-react";
 import clsx from "clsx";
 import GuestCounter from "./GuestCounter";
 
@@ -36,7 +36,6 @@ export default function SearchBar() {
         control,
         handleSubmit,
         formState: { errors },
-        watch,
     } = useForm<SearchFormData>({
         resolver: zodResolver(searchSchema),
         defaultValues: {
@@ -60,7 +59,7 @@ export default function SearchBar() {
             <div className="relative flex-1">
                 <div
                     className={clsx(
-                        "flex h-full flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-[var(--color-primary)]",
+                        "flex h-full flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-(--color-primary)",
                         errors.location ? "border-red-300 bg-red-50" : "border-gray-200"
                     )}
                 >
@@ -91,7 +90,7 @@ export default function SearchBar() {
                 {/* Check-in */}
                 <div
                     className={clsx(
-                        "flex flex-1 flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-[var(--color-primary)]",
+                        "flex flex-1 flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-(--color-primary)",
                         errors.checkIn ? "border-red-300 bg-red-50" : "border-gray-200"
                     )}
                 >
@@ -106,7 +105,7 @@ export default function SearchBar() {
                 {/* Check-out */}
                 <div
                     className={clsx(
-                        "flex flex-1 flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-[var(--color-primary)]",
+                        "flex flex-1 flex-col justify-center rounded-xl border px-4 py-2 transition-colors hover:border-(--color-primary)",
                         errors.checkOut ? "border-red-300 bg-red-50" : "border-gray-200"
                     )}
                 >
@@ -153,7 +152,7 @@ export default function SearchBar() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="flex aspect-square h-full items-center justify-center rounded-2xl bg-[var(--color-highlight)] text-white shadow-lg transition-colors hover:bg-orange-600 md:h-auto md:w-auto md:px-6"
+                className="flex aspect-square h-full items-center justify-center rounded-2xl bg-(--color-highlight) text-white shadow-lg transition-colors hover:bg-orange-600 md:h-auto md:w-auto md:px-6"
             >
                 <Search className="h-6 w-6" />
             </motion.button>

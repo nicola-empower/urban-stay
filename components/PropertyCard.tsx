@@ -60,6 +60,7 @@ export default function PropertyCard({ property }: { property: PropertyProps }) 
         return () => clearInterval(interval);
     }, [isHovered, page]); // Re-run on page change to reset timer
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleDragEnd = (e: any, { offset, velocity }: PanInfo) => {
         const swipe = swipePower(offset.x, velocity.x);
 
@@ -85,7 +86,7 @@ export default function PropertyCard({ property }: { property: PropertyProps }) 
         <div className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md">
             {/* Image Carousel */}
             <div
-                className="relative aspect-[4/3] w-full overflow-hidden bg-gray-200"
+                className="relative aspect-4/3 w-full overflow-hidden bg-gray-200"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
@@ -156,13 +157,13 @@ export default function PropertyCard({ property }: { property: PropertyProps }) 
             <div className="flex flex-1 flex-col p-4">
                 <div className="flex items-start justify-between">
                     <div>
-                        <h3 className="font-heading text-lg font-bold text-[var(--color-foreground)]">
+                        <h3 className="font-heading text-lg font-bold text-(--color-foreground)">
                             {property.title}
                         </h3>
                         <p className="text-sm text-gray-500">{property.location}</p>
                     </div>
                     <div className="flex items-center gap-1">
-                        <Star className="h-4 w-4 fill-[var(--color-highlight)] text-[var(--color-highlight)]" />
+                        <Star className="h-4 w-4 fill-(--color-highlight) text-(--color-highlight)" />
                         <span className="text-sm font-medium">{property.rating}</span>
                     </div>
                 </div>
@@ -192,7 +193,7 @@ export default function PropertyCard({ property }: { property: PropertyProps }) 
                         onMouseEnter={() => setIsPriceHovered(true)}
                         onMouseLeave={() => setIsPriceHovered(false)}
                     >
-                        <span className="font-heading text-lg font-bold text-[var(--color-primary)] cursor-help">
+                        <span className="font-heading text-lg font-bold text-(--color-primary) cursor-help">
                             ${property.price}
                         </span>
                         <span className="text-sm text-gray-500"> / night</span>
@@ -217,7 +218,7 @@ export default function PropertyCard({ property }: { property: PropertyProps }) 
                                         <span>Service fee</span>
                                         <span>${serviceFee}</span>
                                     </div>
-                                    <div className="border-t border-gray-700 pt-2 flex justify-between font-bold text-[var(--color-highlight)]">
+                                    <div className="border-t border-gray-700 pt-2 flex justify-between font-bold text-(--color-highlight)">
                                         <span>Total</span>
                                         <span>${totalPrice}</span>
                                     </div>

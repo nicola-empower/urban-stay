@@ -55,7 +55,7 @@ export default function BookingForm() {
     return (
         <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-xl">
             <div className="mb-6">
-                <h2 className="font-heading text-2xl font-bold text-[var(--color-foreground)]">
+                <h2 className="font-heading text-2xl font-bold text-(--color-foreground)">
                     Secure Your Stay
                 </h2>
                 <p className="text-gray-500">Book your urban retreat today.</p>
@@ -78,7 +78,7 @@ export default function BookingForm() {
                         </p>
                         <button
                             onClick={() => setIsSuccess(false)}
-                            className="mt-6 text-sm font-medium text-[var(--color-primary)] hover:underline"
+                            className="mt-6 text-sm font-medium text-(--color-primary) hover:underline"
                         >
                             Book another stay
                         </button>
@@ -105,7 +105,7 @@ export default function BookingForm() {
                                         "w-full rounded-xl border bg-gray-50 py-3 pl-10 pr-4 text-gray-900 outline-none transition-all focus:bg-white focus:ring-2",
                                         errors.checkIn
                                             ? "border-red-300 focus:border-red-500 focus:ring-red-200"
-                                            : "border-gray-200 focus:border-[var(--color-primary)] focus:ring-[var(--color-primary)]/20"
+                                            : "border-gray-200 focus:border-(--color-primary) focus:ring-primary/20"
                                     )}
                                 />
                             </div>
@@ -138,7 +138,7 @@ export default function BookingForm() {
                                         "w-full rounded-xl border bg-gray-50 py-3 pl-10 pr-4 text-gray-900 outline-none transition-all focus:bg-white focus:ring-2",
                                         errors.checkOut
                                             ? "border-red-300 focus:border-red-500 focus:ring-red-200"
-                                            : "border-gray-200 focus:border-[var(--color-primary)] focus:ring-[var(--color-primary)]/20"
+                                            : "border-gray-200 focus:border-(--color-primary) focus:ring-primary/20"
                                     )}
                                 />
                             </div>
@@ -171,7 +171,7 @@ export default function BookingForm() {
                                         "w-full rounded-xl border bg-gray-50 py-3 pl-10 pr-4 text-gray-900 outline-none transition-all focus:bg-white focus:ring-2",
                                         errors.guests
                                             ? "border-red-300 focus:border-red-500 focus:ring-red-200"
-                                            : "border-gray-200 focus:border-[var(--color-primary)] focus:ring-[var(--color-primary)]/20"
+                                            : "border-gray-200 focus:border-(--color-primary) focus:ring-primary/20"
                                     )}
                                 />
                             </div>
@@ -193,7 +193,7 @@ export default function BookingForm() {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full rounded-xl bg-[var(--color-highlight)] py-4 font-bold text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                            className="w-full rounded-xl bg-(--color-highlight) py-4 font-bold text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
                         >
                             Confirm Booking
                         </button>

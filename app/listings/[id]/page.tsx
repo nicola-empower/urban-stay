@@ -120,7 +120,7 @@ export default function ListingDetails() {
                         <h2 className="font-heading mb-4 text-2xl font-bold text-gray-900">Gallery</h2>
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             {property.images.map((img, index) => (
-                                <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                                <div key={index} className="relative aspect-4/3 overflow-hidden rounded-xl">
                                     <Image
                                         src={img}
                                         alt={`${property.title} - Image ${index + 1}`}

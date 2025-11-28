@@ -84,7 +84,7 @@ function MapMarker({ property, isHighlighted }: { property: any, isHighlighted: 
             <Popup className="custom-popup">
                 <div className="flex flex-col gap-2 p-1">
                     <span className="font-bold text-gray-900">{property.title}</span>
-                    <span className="font-medium text-[var(--color-primary)]">
+                    <span className="font-medium text-(--color-primary)">
                         ${property.price} / night
                     </span>
                 </div>

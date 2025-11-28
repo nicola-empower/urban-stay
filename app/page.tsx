@@ -10,7 +10,7 @@ export default function Home() {
       {/* Featured Section Placeholder */}
       <section className="container mx-auto py-20 px-4">
         <div className="mb-12 text-center">
-          <h2 className="font-heading text-3xl font-bold text-[var(--color-foreground)] md:text-4xl">
+          <h2 className="font-heading text-3xl font-bold text-(--color-foreground) md:text-4xl">
             Curated for Comfort
           </h2>
           <p className="mt-4 text-gray-600">

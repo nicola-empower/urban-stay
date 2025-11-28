@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Building2, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -10,8 +12,8 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
                 <Link href="/" className="flex items-center gap-2">
-                    <Building2 className="h-6 w-6 text-[var(--color-primary)]" />
-                    <span className="font-heading text-xl font-bold tracking-tight text-[var(--color-foreground)]">
+                    <Building2 className="h-6 w-6 text-(--color-primary)" />
+                    <span className="font-heading text-xl font-bold tracking-tight text-(--color-foreground)">
                         Urban Stay
                     </span>
                 </Link>
@@ -20,19 +22,19 @@ export default function Navbar() {
                 <div className="hidden gap-6 md:flex">
                     <Link
                         href="/"
-                        className="text-sm font-medium text-gray-600 transition-colors hover:text-[var(--color-primary)]"
+                        className="text-sm font-medium text-gray-600 transition-colors hover:text-(--color-primary)"
                     >
                         Home
                     </Link>
                     <Link
                         href="/listings"
-                        className="text-sm font-medium text-gray-600 transition-colors hover:text-[var(--color-primary)]"
+                        className="text-sm font-medium text-gray-600 transition-colors hover:text-(--color-primary)"
                     >
                         Listings
                     </Link>
                     <Link
                         href="/booking"
-                        className="text-sm font-medium text-gray-600 transition-colors hover:text-[var(--color-primary)]"
+                        className="text-sm font-medium text-gray-600 transition-colors hover:text-(--color-primary)"
                     >
                         Booking
                     </Link>
@@ -41,7 +43,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-4">
                     <Link
                         href="/booking"
-                        className="hidden rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-700 md:block"
+                        className="hidden rounded-full bg-(--color-primary) px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-700 md:block"
                     >
                         Book Now
                     </Link>
@@ -72,28 +74,28 @@ export default function Navbar() {
                         <div className="flex flex-col space-y-4 p-4">
                             <Link
                                 href="/"
-                                className="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)]"
+                                className="text-sm font-medium text-gray-600 hover:text-(--color-primary)"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="/listings"
-                                className="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)]"
+                                className="text-sm font-medium text-gray-600 hover:text-(--color-primary)"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Listings
                             </Link>
                             <Link
                                 href="/booking"
-                                className="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)]"
+                                className="text-sm font-medium text-gray-600 hover:text-(--color-primary)"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Booking
                             </Link>
                             <Link
                                 href="/booking"
-                                className="inline-block w-full rounded-full bg-[var(--color-primary)] px-4 py-2 text-center text-sm font-medium text-white hover:bg-teal-700"
+                                className="inline-block w-full rounded-full bg-(--color-primary) px-4 py-2 text-center text-sm font-medium text-white hover:bg-teal-700"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Book Now

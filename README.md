@@ -2,7 +2,7 @@
 
 **A Premium Real Estate Booking Platform**
 
-Urban Stay is a bespoke, high-performance web application designed to demonstrate a modern, app-like experience for luxury property rentals. Built with **Next.js 14** and **Tailwind CSS v4**, it focuses on fluid interactivity, advanced animations, and a polished user interface.
+Urban Stay is a bespoke, high-performance web application designed to demonstrate a modern, app-like experience for luxury property rentals. Built with **Next.js 14** and **Tailwind CSS v4**, it focuses on fluid interactivity, advanced animations and a polished user interface.
 
 
 ##  Key Features

@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Urban Stay 
 
-## Getting Started
+**A Premium Real Estate Booking Platform**
 
-First, run the development server:
+Urban Stay is a bespoke, high-performance web application designed to demonstrate a modern, app-like experience for luxury property rentals. Built with **Next.js 14** and **Tailwind CSS v4**, it focuses on fluid interactivity, advanced animations, and a polished user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Immersive User Experience
+*   **Auto-Scroll Carousel**: Property cards feature a custom-built image carousel that automatically glides (right-to-left) on hover, providing a seamless preview without user clicks.
+*   **Gesture Controls**: Fully touch-responsive cards allow users to swipe through images manually.
+*   **Micro-Interactions**: Hovering over pricing reveals a detailed cost breakdown (total for 3 nights + fees), demonstrating complex state derivation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Advanced Map Integration
+*   **Dynamic Mapping**: Integrated **Leaflet** maps that dynamically load to avoid Server-Side Rendering (SSR) issues.
+*   **Two-Way Sync**: A sophisticated interaction where hovering over a property card highlights its corresponding pin on the map, and vice-versa.
 
-## Learn More
+### 3. App-Like Transitions
+*   **Shared Element Transitions**: Utilises **Framer Motion's** `layoutId` to create a "magic move" effect, seamlessly transitioning images from the listing grid to the details page hero section.
+*   **Staggered Animations**: Elements enter the viewport with orchestrated, GPU-accelerated animations for a premium feel.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Smart Search & Validation
+*   **Intelligent Forms**: The search bar includes date logic (preventing check-out before check-in) and a custom guest counter with maximum occupancy limits.
+*   **Robust Validation**: Powered by **Zod** and **React Hook Form** to ensure data integrity and provide real-time feedback.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##  Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+*   **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (using the new `@theme` configuration)
+*   **Animation**: [Framer Motion](https://www.framer.com/motion/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Maps**: [React Leaflet](https://react-leaflet.js.org/)
+*   **Validation**: [Zod](https://zod.dev/)
 
-## Deploy on Vercel
+##  Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/nicola-empower/urban-stay.git
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser:**
+    Navigate to `http://localhost:3000` to view the application.
+
+##  Design Philosophy
+
+The design system prioritises a "Crisp White" aesthetic with Teal (`#008080`) and Sunset Orange (`#FF5733`) accents. The UI is optimised for readability and visual hierarchy, ensuring a luxury feel across all devices.
+
+---
+
+*Developed by Nicola Berry*
